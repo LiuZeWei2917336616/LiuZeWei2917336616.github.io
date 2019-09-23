@@ -1,8 +1,17 @@
 <html>
 <body style="background:#888">
-<h1>我叫刘泽伟.</h1>
-    <p>我的学号是<span id="studentnumber">2012020045</span>
+    <script src="jquery-3.4.1.js"></script>
+<h1>我叫<span id="ids"></span>.</h1>
+    <p>我的学号是<span id="idh"></span>
         <img src="1.jpg" style="border-radius:10px 20px 40px 80px">
 </p>
+<script>
+$(function(){
+    $.get("./kk.json"),function(result){
+        $("#ids").text(resylt.ids)
+        $("#idh").text(resylt.idh)
+    }
+})
+</script>
 </body>
 </html>
