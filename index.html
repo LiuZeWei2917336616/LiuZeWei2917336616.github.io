@@ -8,13 +8,13 @@
 <script>
 $(function(){
     $.get("./kk.json",function(result){
-        $("#ids").text(resylt.ids)
-        $("#idh").text(resylt.idh)
+        $("#ids").text(result.ids)
+        $("#idh").text(result.idh)
     })
     $("#cc").click(function(){
         $.get("./kk.json",function(result){
-        $("#ids").text(resylt.ids)
-        $("#idh").text(resylt.idh)
+        $("#ids").text(result.ids)
+        $("#idh").text(result.idh)
     })
     })
 })
